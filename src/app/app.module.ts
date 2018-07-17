@@ -1,3 +1,5 @@
+import { EditorViewDirective } from './article/editor-view.directive';
+import { ArticleModule } from './article/article.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -7,12 +9,14 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditorViewDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ArticleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
